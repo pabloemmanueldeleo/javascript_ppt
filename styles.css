@@ -1,13 +1,22 @@
 *{
-  padding: 10;
-  margin: 5%;
+  padding: 0;
+  margin: 3%;
 }
 body{
-  background-color: orange;
+  background-color: #141416;
   font-family: monospace;
   font-weight: bold;
 }
+h1{
 
+  color: #fff;
+}
+body div{
+  padding-right: 15px;
+  border: solid #fff 5px;
+  border-radius: 15px;
+  margin: 5px;
+}
 button {
   display: inline-block;
   padding: 10px 20px;
@@ -30,15 +39,20 @@ button:hover {background-color: #d0591e}
 }
 
 .numerospares{
+
   background-color: #e0ee34;
 }
 .btncentro{
   width: 100%;
-  margin: 0 auto%;
+  margin-left: 85%;
+  border: none;
 }
 .aleatorio{
   background-color: #96c11d;
 }
 .ppt{
   background-color: #cfb65d;
+}
+.ppt .btncentro{
+  margin-left: 46%;
 }

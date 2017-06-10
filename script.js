@@ -1,7 +1,7 @@
 'use strict';
 
 function numeroPar () {
-	var numero = document.getElementById('numero').value
+  var numero = document.getElementById('numero').value
 
 	var salida = document.getElementById('salida')
 
@@ -58,5 +58,36 @@ function ppt(ppt) {
 	}else {
 		resultado.textContent ='Resultado: GANASTES, CAPO.';
 	}
+
+}
+function confirmar() {
+	var resultado=confirm('Ya existe tu usuario')
+
+	if (resultado) {
+		alert('Ya existe tu usuario')
+	}else{
+		alert('Hola')
+	}
+}
+function contieneLetra(str, letra){
+	if (str.indexOf(letra)!= -1){
+		return console.log('EL texto contiene la letra '+ letra);
+	}else{
+		return console.log('El texto no contiene una letra '+ letra);
+	}
+}
+function contiene(){
+	var texto = document.getElementById('texto').value;
+	var letra = document.getElementById('letra').value;
+	var salidatexto = document.getElementById('salidatexto');
+	console.log('ffasfasfasfasf')
+	console.log(texto)
+	var t=contieneLetra(texto,letra)
+	if (t){
+	salidatexto.textContent='Contiene la letra ' + letra;
+}else{
+	salidatexto.textContent='No contiene la letra ' + letra;
+}
+
 
 }

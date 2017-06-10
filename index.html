@@ -9,8 +9,8 @@
 		<link rel="stylesheet" href="styles.css">
 
 	</head>
-	<body
-	<h1>JUEGOS DE TAREAS <small>JavaScript + html + css</small></h1>
+	<body>
+	<h1 class="titulo">JUEGOS DE TAREAS <small>JavaScript + html + css</small></h1>
 		<div class="numerospares">
 			<h1>Numeros pares</h1>
 			Numero: <input type="number" size=4 value="100" id='numero'>
@@ -32,16 +32,31 @@
 		</div>
 
 		<div class="ppt">
-			<h1>Piedra, Pepel o Tijera:</h1>
-			<p id='compu'>Resultado de la compu:</p>
-			<br>
+			<h1>Piedra, Pepel o Tijera</h1>
+			<p id='compu'>Resultado de la compu</p>
 			<p id='resultado'>Resultado: </p>
 			<div class="btncentro">
-			<button type="button" onclick="ppt('piedra')",>PIEDRA</button>
-			<button type="button" onclick="ppt('papel')">PAPEL</button>
-			<button type="button" onclick="ppt('tijera')">TIJERA</button>
+				<button type="button" onclick="ppt('piedra')",>PIEDRA</button>
+				<button type="button" onclick="ppt('papel')">PAPEL</button>
+				<button type="button" onclick="ppt('tijera')">TIJERA</button>
 			</div>
+		</div>
 
+		<div class="ppt">
+			<h1>Confirmar cuenta</h1>
+			<div class="btncentro">
+				<button type="button" onclick="confirmar()",>INICIAR</button>
+			</div>
+		</div>
+
+		<div class="aleatorio">
+			<h1>Encontrar letra</h1>
+			<input type="text" id='texto' value="coco y uva">
+			<input type="text" id='letra' value="u">
+			<p id='salidatexto'></p>
+			<div class="btncentro">
+				<button type="button" onclick="contiene()",>INICIAR</button>
+			</div>
 		</div>
 
 		<script src='script.js'></script>
