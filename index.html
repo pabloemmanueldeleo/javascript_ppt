@@ -3,26 +3,46 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Ejercicios javascript primera clase</title>
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+
 	</head>
-	<body>
+	<body
+	<h1>JUEGOS DE TAREAS <small>JavaScript + html + css</small></h1>
+		<div class="numerospares">
+			<h1>Numeros pares</h1>
+			Numero: <input type="number" size=4 value="100" id='numero'>
+			<br>
+			<p id="salida">Los numeros pares son: </p>
+			<div class="btncentro">
+			<button type="button" onclick="numeroPar()">INICIAR</button>
+			</div>
 
-		<h1>Numeros pares:</h1>
-		Numero: <input type="text" size=4 value="100" id='numero'>
-		<br>
-		<button type="button" onclick="numeroPar()">INICIAR</button>
-		<p id="salida">Los numeros pares son: </p>
+		</div>
 
-		<h1>Numero Aleatorios Juego:</h1>
-		<button type="button" onclick="numeroAleatorio(1,10)">INICIAR</button>
-		<p id='numeroAleatorio'>Numero Aleatorio es:</p>
-		<p id='puntaje'>Resultado: </p>
+		<div class="aleatorio">
+			<h1>Numeros Aleatorios</h1>
+			<p id='numeroAleatorio'>Numero Aleatorio es:</p>
+			<p id='puntaje'>Resultado: </p>
+			<div class="btncentro">
+					<button type="button" onclick="numeroAleatorio(1,10)">INICIAR</button>
+			</div>
+		</div>
 
-		<h1>Juego de piedra, Pepel o Tijera:</h1>
-		<button type="button" onclick="ppt(1)">PIEDRA</button>
-		<button type="button" onclick="ppt(2)">PAPEL</button>
-		<button type="button" onclick="ppt(3)">TIJERA</button>
-		<p id='compu:'>Resultado de la compu:</p>
-		<p id='Resultado'>Resultado: </p>
+		<div class="ppt">
+			<h1>Piedra, Pepel o Tijera:</h1>
+			<p id='compu'>Resultado de la compu:</p>
+			<br>
+			<p id='resultado'>Resultado: </p>
+			<div class="btncentro">
+			<button type="button" onclick="ppt('piedra')",>PIEDRA</button>
+			<button type="button" onclick="ppt('papel')">PAPEL</button>
+			<button type="button" onclick="ppt('tijera')">TIJERA</button>
+			</div>
+
+		</div>
 
 		<script src='script.js'></script>
 	</body>

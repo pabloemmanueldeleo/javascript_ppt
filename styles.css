@@ -1,0 +1,44 @@
+*{
+  padding: 10;
+  margin: 5%;
+}
+body{
+  background-color: orange;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 15px;
+  width: 0 auto;
+}
+button:hover {background-color: #d0591e}
+
+ button:active {
+  background-color: #424242;
+  transform: translateY(4px);
+}
+
+.numerospares{
+  background-color: #e0ee34;
+}
+.btncentro{
+  width: 100%;
+  margin: 0 auto%;
+}
+.aleatorio{
+  background-color: #96c11d;
+}
+.ppt{
+  background-color: #cfb65d;
+}
