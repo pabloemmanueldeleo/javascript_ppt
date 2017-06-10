@@ -1,4 +1,4 @@
-var numeroPar = function() {
+function numeroPar() {
 	var numero = document.getElementById('numero').value;
 
 	var salida = document.getElementById('salida');
@@ -15,7 +15,7 @@ var numeroPar = function() {
 		}
 
 	}
-};
+}
 function numeroAleatorio(min, max) {
 	var salida = document.getElementById('numeroAleatorio');
 	var puntaje = document.getElementById('puntaje');
@@ -24,18 +24,22 @@ function numeroAleatorio(min, max) {
 
 	salida.textContent='Numero Aleatorio es: ' + String(num);
 
-	if (num <= 3 and num >= 1){
-		puntaje.textContent='Resultado: Ganastes 5 puntos.'
-	else if (num <= 6 and num >= 4) {
-		puntaje.textContent='Resultado: Ganastes 10 puntos.'
+	if (num <= 3 && num >= 1){
+		puntaje.textContent='Resultado: Ganastes 5 puntos.';
 	}
-	else if (num <= 9 and num >= 7) {
-		puntaje.textContent='Resultado: Ganastes 10 puntos.'
+	else if (num <= 6 && num >= 4) {
+		puntaje.textContent='Resultado: Ganastes 10 puntos.';
+	}
+	else if (num <= 9 && num >= 7) {
+		puntaje.textContent='Resultado: Ganastes 10 puntos.';
 	}
 	else if (num == 10) {
-		puntaje.textContent='Resultado: Ganastes el juego.'
+		puntaje.textContent='Resultado: Ganastes el juego.';
 	}
 	else{
-		puntaje.textContent='Resultado: Lo siento perdistes.'
+		puntaje.textContent='Resultado: Lo siento perdistes.';
 	}
+}
+function ppt(ppt) {
+			
 }
