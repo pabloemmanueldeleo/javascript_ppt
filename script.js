@@ -41,5 +41,5 @@ function numeroAleatorio(min, max) {
 	}
 }
 function ppt(ppt) {
-			
+
 }
