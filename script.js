@@ -1,12 +1,14 @@
 'use strict';
-
+/*jslint node: true */
+/* jshint browser: true */
+/* jshint devel: true */
 function numeroPar () {
-  var numero = document.getElementById('numero').value
+  var numero = document.getElementById('numero').value;
 
-	var salida = document.getElementById('salida')
+	var salida = document.getElementById('salida');
 
 	if (isNaN(numero)){
-			salida.textContent = 'Tiene que ser un numero.'
+			salida.textContent = 'Tiene que ser un numero.';
 	}else{
 		var pares=[];
 		for (var i = 1; i <= numero; i++) {
@@ -61,33 +63,39 @@ function ppt(ppt) {
 
 }
 function confirmar() {
-	var resultado=confirm('Ya existe tu usuario')
+	var resultado=window.confirm('Ya existe tu usuario');
 
 	if (resultado) {
-		alert('Ya existe tu usuario')
+		window.alert('Ya existe tu usuario');
 	}else{
-		alert('Hola')
+		window.alert('Hola');
 	}
 }
-function contieneLetra(str, letra){
-	if (str.indexOf(letra)!= -1){
-		return console.log('EL texto contiene la letra '+ letra);
-	}else{
-		return console.log('El texto no contiene una letra '+ letra);
-	}
-}
-function contiene(){
-	var texto = document.getElementById('texto').value;
+function contieneLetra(){
+    var texto = document.getElementById('texto').value;
 	var letra = document.getElementById('letra').value;
 	var salidatexto = document.getElementById('salidatexto');
-	console.log('ffasfasfasfasf')
-	console.log(texto)
-	var t=contieneLetra(texto,letra)
-	if (t){
-	salidatexto.textContent='Contiene la letra ' + letra;
-}else{
-	salidatexto.textContent='No contiene la letra ' + letra;
+
+	if (texto.indexOf(letra)!= -1){
+	       salidatexto.textContent= 'EL texto contiene la letra '+ letra;
+	}else{
+		   salidatexto.textContent= 'EL texto no contiene la letra '+ letra;
+	}
 }
 
+function iva () {
+    var numero = document.getElementById('niva').value;
+	var salidaConIva = document.getElementById('salidaConIva');
+    var salidaSinIva = document.getElementById('salidaSinIva');
 
-}
+	if (isNaN(numero)){
+	    salidaConIva.textContent = 'Pon un precio para sacar el iva';
+	}else{
+        var iva=1.21;
+        var totalConIva= numero * iva;
+        var totalSinIva= totalConIva / iva;
+			salidaConIva.textContent = 'El precio con iva es: '+ totalConIva ;
+            salidaSinIva.textContent = 'El precio sin iva es: '+ totalSinIva ;
+		}
+
+	}
